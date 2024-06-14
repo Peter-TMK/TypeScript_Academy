@@ -1,7 +1,7 @@
 // let message: string = "Hello tsc tut";
 // // console.log(message);
 
-// let heading = document.createElement("h2");
+let heading = document.createElement("h2");
 // heading.textContent = message;
 // document.body.appendChild(heading);
 // console.log(document.body.appendChild(heading));
