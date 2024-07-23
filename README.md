@@ -1,1 +1,1 @@
-# TypeScript_Nest_React
+# TypeScript_Exercises
