@@ -1,8 +1,11 @@
 // Exercise 1: Function Type Declaration
 // Declare a variable named multiply with a function type that accepts two number parameters and returns a number.
 // Then assign a function to this variable that multiplies the two numbers.
+// const multiply = function (num1: number, num2: number): number
 
-const multiply = function (num1: number, num2: number): number {
+let multiply: (num1: number, num2: number) => number;
+
+multiply = function (num1: number, num2: number): number {
   return num1 * num2;
 };
 
@@ -12,7 +15,9 @@ console.log(multiply(4, 5));
 // Declare a variable named concatStrings with a function type that accepts two string parameters and returns a string.
 // Assign a function to this variable that concatenates the two strings with a space in between.
 
-const concatStrings = function (str1: string, str2: string): string {
+let concatStrings: (str1: string, str2: string) => string;
+
+concatStrings = function (str1: string, str2: string): string {
   return `${str1} ${str2}`;
 };
 console.log(concatStrings("Hi", "mlady"));
@@ -21,7 +26,9 @@ console.log(concatStrings("Hi", "mlady"));
 // Declare a variable named isPositive with a function type that accepts a number parameter and returns a boolean.
 // Assign a function to this variable that checks if the number is positive.
 
-const isPositive = function (num: number): boolean {
+let isPositive: (num: number) => boolean;
+
+isPositive = function (num: number): boolean {
   return num > 0 ? true : false;
 };
 console.log(isPositive(6));
@@ -31,7 +38,9 @@ console.log(isPositive(0));
 // Declare a variable named sumArray with a function type that accepts an array of number and returns a number.
 // Assign a function to this variable that sums all the numbers in the array.
 
-const sumArray = function (arr: Array<number>): number {
+let sumArray: (arr: Array<number>) => number;
+
+sumArray = function (arr: Array<number>): number {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
@@ -44,7 +53,9 @@ console.log(sumArray([1, 2, 3, 4, 5]));
 // Declare a variable named hasProperty with a function type that accepts an object and a string (property name) as parameters
 // and returns a boolean. Assign a function to this variable that checks if the object has the specified property.
 
-const hasProperty = function (obj: object, propertyName: string): boolean {
+let hasProperty: (obj: object, propertyName: string) => boolean;
+
+hasProperty = function (obj: object, propertyName: string): boolean {
   return obj.hasOwnProperty(propertyName);
 };
 const city = { name: "Lagos", population: "200+" };
